@@ -1,0 +1,22 @@
+.topics{
+    width: 90%;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+@media only screen and (max-width: 1200px) {
+    .topics{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 815px) {
+    .topics{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 550px) {
+    .topics{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

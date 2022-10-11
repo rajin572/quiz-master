@@ -1,0 +1,54 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.list li{
+    list-style: none;
+}
+.list a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+.listPossition{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 70px;
+    padding: 10px 0px;
+}
+.hidden{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        padding: 20px 20px;
+    }
+    .hidden{
+        display: block;
+    }
+    .list{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .list a{
+        margin: 1px 0px;
+    }
+    .listhidden{
+        display: none;
+    }
+}
