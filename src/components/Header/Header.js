@@ -8,7 +8,7 @@ const Header = () => {
             <div><img src={mainImg} alt="" /></div>
             <div className='textContainer'>
                 <h1>Welcome To Quiz Master</h1>
-                <h2>Text Your Basic Knowledge From Here</h2>
+                <h2>Test Your Basic Knowledge From Here</h2>
                 <p>We have organise a big and effective plan for our students. Here you can test yourself, Test your knowledge and Many More</p>
             </div>
         </div>
