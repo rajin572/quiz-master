@@ -8,7 +8,6 @@ const Topics = () => {
     console.log(data);
     return (
         <div>
-            <div>Here my all topics</div>
             <div className='topics'>
                 {
                     data.map(topic => <Topic key={topic.id} topic={topic}></Topic>)

@@ -1,9 +1,19 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import './Statistics.css'
 
 const Statistics = () => {
+    const {data} = useLoaderData()
     return (
-        <div>
-            here my statistics
+        <div className='chart'>
+                <LineChart className='liv' width={1000} height={300} data={data}>
+                <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          {/* <Legend /> */}
+                    <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
+                </LineChart>
         </div>
     );
 };

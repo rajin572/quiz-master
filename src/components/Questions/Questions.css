@@ -19,9 +19,23 @@
     background-color: white;
     border-radius: 14px;
 }
+.options label:hover{
+    padding: 20px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 14px;
+}
+.quizHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
 .icon{
     display: block;
     margin-left: auto;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
 }
 @media only screen and (max-width: 1024px) {
     .question{

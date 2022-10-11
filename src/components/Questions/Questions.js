@@ -5,12 +5,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Questions.css'
 
-const Questions = ({question}) => {
+const Questions = ({question,_idx}) => {
     console.log(question);
     const correct = () => toast.success("Your Answer is correct");
     const wrong = () => toast.error("Your Answer is wrong");
     const {options, correctAnswer} = question
-    const ans = () => toast.info(`Your Answer is:     ${correctAnswer}`);
+    const ans = () => toast.info(`Your Answer is: ${correctAnswer}`);
     const getAnswer = (data)=>{
         if(data === correctAnswer){
             correct();
@@ -24,8 +24,10 @@ const Questions = ({question}) => {
     }
     return (
         <div className='question'>
-            <p>{question.length}</p>
+            <div className='quizHeader'>
+            <h2>Quiz {_idx+1} : {question.length}</h2>
             <FontAwesomeIcon onClick={showAnswer} className='icon' icon={faEye}></FontAwesomeIcon>
+            </div>
             <h3>{question.question}</h3>
             <div className='options'>
                 {

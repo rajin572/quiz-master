@@ -12,7 +12,7 @@ const Quiz = () => {
             <h3>Total Quiz {total}</h3>
             <div>
                 {
-                    questions.map((question,_idx)  => <Questions key={_idx} question={question}></Questions> )
+                    questions.map((question,_idx)  => <Questions key={_idx} _idx={_idx} question={question}></Questions> )
                 }
             </div>
         </div>

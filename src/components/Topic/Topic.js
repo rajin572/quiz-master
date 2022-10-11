@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './Topic.css'
 
 const Topic = ({topic}) => {
-    console.log(topic);
     return (
         <div className='topic'>
             <img src={topic.logo} alt="" />
