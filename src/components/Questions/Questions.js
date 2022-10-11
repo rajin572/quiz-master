@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEye} from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer, toast } from 'react-toastify';
@@ -28,7 +28,7 @@ const Questions = ({question,_idx}) => {
             <h2>Quiz {_idx+1} : {question.length}</h2>
             <FontAwesomeIcon onClick={showAnswer} className='icon' icon={faEye}></FontAwesomeIcon>
             </div>
-            <h3>{question.question}</h3>
+            <h3>{question.question.slice(3, -4)}</h3>
             <div className='options'>
                 {
                     options.map((option,_idx) => <label key={_idx} ><input type="radio" name='q' onClick={() => getAnswer(option)} id={_idx}/>
