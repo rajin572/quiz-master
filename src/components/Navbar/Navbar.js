@@ -6,8 +6,8 @@ import './Navbar.css'
 
 const Navbar = () => {
     let activeStyle = {
-        backgroundColor: "white",
-        color: "black",
+        backgroundColor: "black",
+        color: "white",
         borderRadius: '5px'
       };
     const [open , setOpen] = useState(false)

@@ -7,13 +7,15 @@ const Statistics = () => {
     const {data} = useLoaderData()
     return (
         <div className='chart'>
+            <ResponsiveContainer width="95%" height={300}>
                 <LineChart className='liv' width={1000} height={300} data={data}>
-                <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          {/* <Legend /> */}
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
                     <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
                 </LineChart>
+            </ResponsiveContainer>
+
         </div>
     );
 };
