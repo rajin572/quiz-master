@@ -12,7 +12,7 @@ const Statistics = () => {
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
-                    <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
+                    <Line type="monotone" dataKey="total" stroke="#00aaff" strokeWidth={2} />
                 </LineChart>
             </ResponsiveContainer>
 

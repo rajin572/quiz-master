@@ -6,10 +6,10 @@ const Header = () => {
     return (
         <div className='container'>
             <div><img src={mainImg} alt="" /></div>
-            <div>
+            <div className='textContainer'>
                 <h1>Welcome To Quiz Master</h1>
                 <h2>Text Your Basic Knowledge From Here</h2>
-                <p>We organise a big and effective plan for our students. Here you can test yourself, Test your knowledge and Many More</p>
+                <p>We have organise a big and effective plan for our students. Here you can test yourself, Test your knowledge and Many More</p>
             </div>
         </div>
     );
