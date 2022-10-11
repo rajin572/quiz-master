@@ -5,7 +5,6 @@ import './Topics.css'
 
 const Topics = () => {
     const {data} = useLoaderData()
-    console.log(data);
     return (
         <div>
             <div className='topics'>

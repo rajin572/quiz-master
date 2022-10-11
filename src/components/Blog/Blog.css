@@ -2,7 +2,7 @@
     background-color: aliceblue;
     user-select: none;
 }
-h1 {
+.blogQuestion h1 {
     text-align: center;
     color: rgb(77, 136, 255);
     padding: 50px 0px;

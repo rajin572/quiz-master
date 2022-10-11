@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Questions.css'
 
 const Questions = ({question,_idx}) => {
-    console.log(question);
     const correct = () => toast.success("Your Answer is correct");
     const wrong = () => toast.error("Your Answer is wrong");
     const {options, correctAnswer} = question

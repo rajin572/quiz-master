@@ -1,6 +1,7 @@
 import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
@@ -21,6 +22,7 @@ function App() {
           element: <div>
             <Header></Header>
             <Topics></Topics>
+            <Footer></Footer>
           </div>
         },
         {
@@ -31,6 +33,7 @@ function App() {
           element: <div>
           <Header></Header>
           <Topics></Topics>
+          <Footer></Footer>
         </div>
         },
         {
