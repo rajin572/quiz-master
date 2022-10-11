@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Questions.css'
 
 const Questions = ({question}) => {
+    console.log(question);
     const correct = () => toast.success("Your Answer is correct");
     const wrong = () => toast.error("Your Answer is wrong");
     const {options, correctAnswer} = question
@@ -23,11 +24,12 @@ const Questions = ({question}) => {
     }
     return (
         <div className='question'>
+            <p>{question.length}</p>
             <FontAwesomeIcon onClick={showAnswer} className='icon' icon={faEye}></FontAwesomeIcon>
             <h3>{question.question}</h3>
             <div className='options'>
                 {
-                    options.map((option,_idx) => <label><input  type="radio" name='q' onClick={() => getAnswer(option)} id={_idx}/>
+                    options.map((option,_idx) => <label key={_idx} ><input type="radio" name='q' onClick={() => getAnswer(option)} id={_idx}/>
                     {option}</label>)
                 }
             </div>
