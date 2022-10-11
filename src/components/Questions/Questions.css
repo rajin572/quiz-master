@@ -1,19 +1,23 @@
 .question{
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(0, 170, 255);
     width: 80%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 14px;
-    border: 2px solid rgb(160, 160, 160);
+    border: 2px solid rgb(108, 108, 108);
 }
 .options{
-    margin: 10px auto;
+    margin: 50px auto 10px;
     text-align: start;
     padding: 10px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-
+}
+.options label{
+    padding: 20px;
+    background-color: white;
+    border-radius: 14px;
 }
 .icon{
     display: block;

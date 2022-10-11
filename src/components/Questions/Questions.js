@@ -9,7 +9,7 @@ const Questions = ({question}) => {
     const correct = () => toast.success("Your Answer is correct");
     const wrong = () => toast.error("Your Answer is wrong");
     const {options, correctAnswer} = question
-    const ans = () => toast.info(`Your Answer is ${correctAnswer}`);
+    const ans = () => toast.info(`Your Answer is:     ${correctAnswer}`);
     const getAnswer = (data)=>{
         if(data === correctAnswer){
             correct();
@@ -24,10 +24,10 @@ const Questions = ({question}) => {
     return (
         <div className='question'>
             <FontAwesomeIcon onClick={showAnswer} className='icon' icon={faEye}></FontAwesomeIcon>
-            <h4>{question.question}</h4>
+            <h3>{question.question}</h3>
             <div className='options'>
                 {
-                    options.map((option,_idx) => <label key={_idx}><input onClick={() => getAnswer(option)} name={_idx} type="radio"/>
+                    options.map((option,_idx) => <label><input  type="radio" name='q' onClick={() => getAnswer(option)} id={_idx}/>
                     {option}</label>)
                 }
             </div>
